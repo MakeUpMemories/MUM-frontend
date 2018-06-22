@@ -5,13 +5,15 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { FirstViewComponent } from './first-view/first-view.component';
+import { MenuBarComponent } from './menu-bar/menu-bar.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    FirstViewComponent
+    FirstViewComponent,
+    MenuBarComponent
   ],
   imports: [
     BrowserModule
