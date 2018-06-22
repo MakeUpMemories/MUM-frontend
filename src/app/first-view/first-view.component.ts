@@ -7,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FirstViewComponent implements OnInit {
 
-  constructor() { }
+  brideImagePath : string;
+
+  constructor() {
+    this.brideImagePath = '/assets/bride.png'
+  }
 
   ngOnInit() {
   }
