@@ -8,6 +8,7 @@ import { FirstViewComponent } from './first-view/first-view.component';
 import { MenuBarComponent } from './menu-bar/menu-bar.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { RegisterComponent } from './register/register.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { RegisterComponent } from './register/register.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

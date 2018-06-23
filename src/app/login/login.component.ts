@@ -1,4 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, NgModule } from '@angular/core';
+import { NgForm, FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -7,9 +8,8 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  @Input() want_login : boolean;
-  username = 'username of user';
-  password = 'password of user';
+  email_of_user: string;
+  password: string;
 
   makeupColors = ['red', 'blue', 'white', 'black']
 
@@ -19,9 +19,11 @@ export class LoginComponent implements OnInit {
     // Good place to put initialization code
   }
 
-  onClickMe(){
+  onClickMe(form: NgForm){
+
     // this.username = username;
-    console.log("On click is clicked!")
+    console.log(this.email_of_user);
+    console.log(this.password);
   }
   // onKey(event: any){}
 
