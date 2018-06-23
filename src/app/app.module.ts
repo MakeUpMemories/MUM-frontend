@@ -7,6 +7,7 @@ import { LoginComponent } from './login/login.component';
 import { FirstViewComponent } from './first-view/first-view.component';
 import { MenuBarComponent } from './menu-bar/menu-bar.component';
 import { AppRoutingModule } from './/app-routing.module';
+import { RegisterComponent } from './register/register.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { AppRoutingModule } from './/app-routing.module';
     AppComponent,
     LoginComponent,
     FirstViewComponent,
-    MenuBarComponent
+    MenuBarComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

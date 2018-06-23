@@ -1,14 +1,10 @@
-<nav>
-    <a routerLink="login">Login</a>
-</nav>
-<router-outlet></router-outlet>
 <div class="first_view">
     <div id="image">
     <!-- <img class="image" [src]=brideImagePath alt="bride" > -->
     </div>
 
     <div id="login_button">
-    <button class="login_button" onclick="login_view()">Login</button>
+    <a routerLink="/login"> <button class="login_button" onclick="login_view()">Login</button></a>
     </div>
 
     <div id="registration_button">
