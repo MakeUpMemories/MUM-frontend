@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { LoginComponent } from '../login/login.component';
 @Component({
   selector: 'app-first-view',
   templateUrl: './first-view.component.html',
@@ -8,12 +8,16 @@ import { Component, OnInit } from '@angular/core';
 export class FirstViewComponent implements OnInit {
 
   brideImagePath : string;
-
+  
   constructor() {
     this.brideImagePath = '/assets/bride.png'
   }
 
   ngOnInit() {
+  }
+
+  login_view(){
+
   }
 
 }
