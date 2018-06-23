@@ -8,7 +8,8 @@ import { LoginComponent } from '../login/login.component';
 export class FirstViewComponent implements OnInit {
 
   brideImagePath : string;
-  
+  openedLogin: boolean;
+
   constructor() {
     this.brideImagePath = '/assets/bride.png'
   }
@@ -16,8 +17,8 @@ export class FirstViewComponent implements OnInit {
   ngOnInit() {
   }
 
-  login_view(){
-
+  login_view(isOpen: boolean){
+    this.openedLogin = isOpen;
   }
 
 }
